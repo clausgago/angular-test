@@ -1,0 +1,57 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.bet {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers {
+  display: flex;
+  gap: 6px;
+}
+
+.number__button {
+  height: 24px;
+  width: 24px;
+  font-size: 1rem;
+}
+
+.number__button:not([value]) {
+  border: none;
+}
+
+.bet-form {
+  display: flex;
+  gap: 5px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.bet-input-container {
+  display: flex;
+  border: solid 2px #aaa;
+}
+
+.bet-multiplier {
+  display: flex;
+  align-items: center;
+  background: var(--main-bg);
+  padding: 0 8px;
+}
+
+.bet-input {
+  border: none;
+  padding: 4px 0;
+  width: 60px;
+  text-align: right;
+}
+
+.bet-total {
+  text-align: center;
+  padding: 6px 0;
+}

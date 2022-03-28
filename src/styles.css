@@ -1,0 +1,99 @@
+/* Global Styles */
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --main-bg: rgb(243, 243, 243);
+  --background-0: #fff;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--main-bg);
+}
+
+.primary-button {
+  background: #1479da;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.primary-button[disabled] {
+  background: #aaa;
+}
+
+.primary-button:hover {
+  background: #0e63b3;
+}
+
+.number__button {
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px;
+  font-size: 1.2rem;
+}
+
+.number__button[value='1'] {
+  background-color: #ef535099;
+  border-color: #ef5350;
+}
+
+.number__button[value='2'] {
+  background-color: #ffe08299;
+  border-color: #ffe082;
+}
+
+.number__button[value='3'] {
+  background-color: #43a04799;
+  border-color: #43a047;
+}
+
+.number__button[value='4'] {
+  background-color: #f48fb199;
+  border-color: #f48fb1;
+}
+
+.number__button[value='5'] {
+  background-color: #fdd83599;
+  border-color: #fdd835;
+}
+
+.number__button[value='6'] {
+  background-color: #8bc34a99;
+  border-color: #8bc34a;
+}
+
+.number__button[value='7'] {
+  background-color: #f0629299;
+  border-color: #f06292;
+}
+
+.number__button[value='8'] {
+  background-color: #ffee5899;
+  border-color: #ffee58;
+}
+
+.number__button[value='9'] {
+  background-color: #bcaaa499;
+  border-color: #bcaaa4;
+}
+
+.number__button[value='10'] {
+  background-color: #b0bec599;
+  border-color: #b0bec5;
+}

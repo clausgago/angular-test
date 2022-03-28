@@ -1,0 +1,21 @@
+<div class="container">
+  <app-ball-selector
+    *ngIf="won === null"
+    class="ball-selector"
+    [selectedBalls]="selectedBalls"
+    (ballSelectedEvent)="onBallSelected($event)"
+    (clearSelectionEvent)="onClearSelection()"
+  ></app-ball-selector>
+
+  <div class="result" *ngIf="won !== null">
+    <h2 class="title">Result</h2>
+    <button class="number__button" value="{{ result }}">{{ result }}</button>
+    <div class="result__text">YOU {{ won > 0 ? 'WON' : 'LOSE' }} {{ won ? won + '€' : '' }}</div>
+  </div>
+
+  <app-bet-slip
+    class="bet-slip"
+    [selectedBalls]="selectedBalls"
+    (placeBetEvent)="onPlaceBet($event)"
+  ></app-bet-slip>
+</div>
